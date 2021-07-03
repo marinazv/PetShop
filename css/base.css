@@ -1,0 +1,18 @@
+:root{
+    --colorppal: #F0A83E;
+    --fdoFooter: #3C2313;
+    --fdoUpdown:#222222;
+    --colorLetras:#FFFFFF;
+    --colorProduct:#FBFAF6;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration:none;    
+    color: #666666;    ;
+}

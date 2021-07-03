@@ -1,58 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <span>Grandes ofertas</span>
-        <span>Español</span>
-        <span>ARG$</span>
-        <h1>
-            <img src="img/cat.png" alt="Gatito"> FrontCat&Dog <img src="img/dog.png" alt="Perrito">
-        </h1>
-        <nav>
-            <span><img src="img/huella.png" alt="huella de perro"> Categorias</span>
-            <span><img src="img/huella.png" alt="huella de perro"> Pets</span>
-            <span><img src="img/huella.png" alt="huella de perro"> Nosotros</span>
-            <span><img src="img/huella.png" alt="huella de perro"> Contactanos</span>
-        </nav>
+        <div class="header-up">
+            <span>Grandes ofertas</span>
+            <div>
+                <span>Español<i class="fas fa-chevron-circle-down"></i></span>
+                <span>ARG$<i class="fas fa-chevron-circle-down"></i></span>
+            </div>
+            </div>
+        <div class="header-logonav">
+            <div class="header-heroe">
+                <h1>
+                    <img src="img/cat.png" alt="Gatito"> FrontCat&Dog <img src="img/dog.png" alt="Perrito">
+                </h1>
+            </div>
+            <nav class="header-nav">
+                <span><i class="fas fa-paw"></i> Categorias</span>
+                <span><i class="fas fa-paw"></i> Pets</span>
+                <span><i class="fas fa-paw"></i> Nosotros</span>
+                <span><i class="fas fa-paw"></i>Contactanos</span>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <img src="img/heroe.png" alt="ppal">
-            <h3>Es un placer tenerte aqui</h3>
-            <h4>Comederos en descuento</h4>
-            <span>Comederos</span>
+        <section class="heroe">
+            <div class="heroe-info">
+                <h3>Es un placer tenerte aqui</h3>
+                <span>¡Comederos en descuento!</span>
+                <button>Comederos</button>
+            </div>
         </section>
         <section>
-            <img src="img/huellagrande.png" alt="huella">
-            <h2>Productos Destacados</h2>
-            <span>Comederos</span>
-            <span>Accesorios</span>
-            <span>Comida</span>
-            <div>
-                <img src="img/churrasquito.png" alt="Charrasco">
-                <h4>Juguete Churrasquito</h4>
-                <span>$150</span>
+            <div class="main-header">
+                <img src="img/huellagrande.png" alt="huella">
+                <h2>Productos Destacados</h2>
+                <div>
+                    <a href="#"> Comederos</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Comida</a>
+                </div>
             </div>
-            <div>
-                <img src="img/comedero.png" alt="comedero">
-                <h4>Comedero para perro</h4>
-                <span>$250</span>
-            </div>
-            <div>
-                <img src="img/Huesito.png" alt="Huesito">
-                <h4>Juguete huesito</h4>
-                <span>$650</span>
+            <div class="productos">
+                <div class="productos-unitario">
+                    <img src="img/churrasquito.png" alt="Charrasco">
+                    <h4>Juguete Churrasquito</h4>
+                    <span class="productos-precios">$150</span>
+                </div>
+                <div class="productos-unitario">
+                    <img src="img/comedero.png" alt="comedero">
+                    <h4>Comedero para perro</h4>
+                    <span class="productos-precios">$250</span>
+                </div>
+                <div class="productos-unitario">
+                    <img src="img/Huesito.png" alt="Huesito">
+                    <h4>Juguete huesito</h4>
+                    <span class="productos-precios">$650</span>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p style="object-position: center;">Todos los derechos reservados FrontEnd</p>
+        <div class="footer-half">
+            <div>
+                <div class="footer-left"> 
+                    <img src="img/localidad.png" alt="icono localidad">
+                    <h2>Localidad</h2> 
+                    <span>Calle - provincia</span>
+                </div>
+                <div class="footer-left">
+                    <img src="img/telefono.png" alt="icono telefono">
+                    <h2>Teléfono</h2>
+                    <span>Número de teléfono</span>
+                </div>
+                <div class="footer-left">
+                    <img src="img/correo.png" alt="icono e-mail">
+                    <h2>Correo electronico</h2>
+                    <span>Dirección de correo</span>
+                </div>
+            </div>
+            <div>
+                <img src="img/Logo.png" alt="Logo">
+            </div>
+        </div>
+        <p class="footer-down">Todos los derechos reservados FrontEnd</p>
     </footer>
 </body>
 </html>
